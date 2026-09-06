@@ -1,0 +1,67 @@
+VapeTrainer BestOfBoth V3 SMART5-R10 build audit
+
+Scope
+-----
+R10 is a surgical correctness revision over the runtime-proven SMART4/R9 baseline.
+RACEGUARD1, FeaturePack R4, ESP Freelook FIX4, live attach loader, injector binaries,
+and the base injection JAR/DLL are copied byte-for-byte from R9.
+
+R10 fixes the concrete findings in the latest 436-line R9 combat log:
+1. delayed health-drop feedback could arrive ~165-204 ms after hurtTime reset and
+   escape R9's 150 ms dedupe, creating a duplicate damage cycle;
+2. timeUntilRegen-rise false-fired while health was regenerating;
+3. an established hurtTime cycle could switch to local500ms after hurtTime reached 0;
+4. 125 ms Maximum Hold was commonly observed as ~145-174 ms because release was only
+   checked on ~50 ms PreTick boundaries.
+
+Damage epoch model
+------------------
+- Sharp hurtTime rise/reset starts a new epoch immediately.
+- Health drop with no active epoch starts one.
+- Health drop inside a locked hurtTime epoch merges as confirmation through the
+  predicted boundary + 300 ms, covering the delayed feedback measured in R9.
+- A later sharp hurtTime reset always starts the next real epoch immediately.
+- timeUntilRegen remains reflected/logged for diagnostics only and is never a trigger
+  or scheduling source in R10.
+
+Clock locking
+-------------
+- hurtTime is locked as the epoch clock as soon as a positive usable sample exists.
+- predictedBoundaryAt is refreshed from descending hurtTime samples.
+- At hurtTime=0, the source remains hurtTime; no local fallback is allowed.
+- If no hurtTime establishes within 100 ms, local500ms locks as the compatibility
+  fallback from the original epoch start time.
+
+Release timing
+--------------
+- A hurt-window block stores predictedBoundaryAt and desiredBlockEndAt.
+- Boundary + 50 ms coverage is the normal desired end.
+- Maximum Hold is the hard failsafe.
+- Because input changes remain on PreTick, the failsafe begins checking one game tick
+  early so the next event is less likely to overshoot the configured wall-clock cap.
+- New logs include damageEpochStart, damageSignalMerged, damageEpochClock,
+  damageEpochFallback, hurtWindowStart, hurtWindowEnd, and damageEpochComplete.
+
+Runtime identity / stale listener protection
+--------------------------------------------
+- New implementation identity: SmartBlockHitModeV4.
+- Loaded V2 is tombstoned as before.
+- Loaded R9 V3 is redefined to a schema-compatible tombstone before old Smart objects
+  are unregistered/removed.
+- The V3 tombstone was statically compared with R9 V3 using javap; fields/method schema
+  is identical, satisfying Java redefineClasses schema constraints.
+- Old Smart values, dependency bookkeeping, submodules, global selections and direct
+  EventBus listeners are cleaned before the fresh V4 object is registered.
+- Canonical mode array remains Manual / Predict / Smart / Auto / Lag.
+- Up to all eight existing Smart settings are restored by field name.
+- If Smart is selected+enabled at installation, RESULT=PASS requires exact V4 instance
+  identity plus the SMART5-R10 onEnable marker.
+
+Static build verification
+-------------------------
+- SmartBlockHitModeV4 compiled successfully against the unchanged RACEGUARD1 injection
+  JAR.
+- R10 agent compiled successfully.
+- Agent, V4, V4$State, V4$Clock, and the V3 tombstone are Java classfile version 52.
+- R10 agent contains every required payload resource.
+- ZIP/JAR structural integrity and package SHA256 are generated after packaging.

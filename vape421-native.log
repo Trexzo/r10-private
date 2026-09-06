@@ -1,0 +1,394 @@
+﻿[2026-09-05 07:55:26.218] materialized embedded product JAR: C:\Users\Felix\AppData\Local\Temp\Vape421Recovery\vape421-product-16540.jar (23959243 bytes)
+[2026-09-05 07:55:26.222] appended product JAR to Fabric Knot ClassLoader
+[2026-09-05 07:55:26.224] registered NativeBridge methods (9 sample + gat + cpy + 5 stub)
+[2026-09-05 07:55:26.224] NativeBridge linked from C:\Users\Felix\AppData\Local\Temp\Vape421Recovery\vape421-product-16540.jar
+[2026-09-05 07:55:26.238] client error report: LOAD loadMappings
+[2026-09-05 07:55:27.325] client error report: OK loadMappings
+[2026-09-05 07:55:27.326] client error report: LOAD initAccountInfo
+[2026-09-05 07:55:27.331] client error report: Failed to initialize account details2: 
+Exception java.util.concurrent.CompletionException java.util.concurrent.CompletionException: java.lang.RuntimeException: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.lang.RuntimeException: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at knot//gg.vape.api.ApiServices.requestAccountInfo(ApiServices.java:61)
+	at knot//gg.vape.api.ApiServices.lambda$getAccountInfo$0(ApiServices.java:27)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	... 6 more
+Caused by: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at knot//gg.vape.api.ApiHttpClient.withConnection(ApiHttpClient.java:71)
+	at knot//gg.vape.api.ApiHttpClient.get(ApiHttpClient.java:180)
+	at knot//gg.vape.api.ApiHttpClient.getApiResponse(ApiHttpClient.java:90)
+	at knot//gg.vape.api.ApiServices.requestAccountInfo(ApiServices.java:57)
+	... 8 more
+Caused by: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+[2026-09-05 07:55:27.332] client error report: WARN initAccountInfo; continuing without account information
+[2026-09-05 07:55:27.332] client error report: LOAD initializeManagers
+[2026-09-05 07:55:27.336] client error report: DEBUG 
+Exception java.util.concurrent.CompletionException java.util.concurrent.CompletionException: java.lang.RuntimeException: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.lang.RuntimeException: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at knot//gg.vape.api.PublicProfileApi.requestMostPopularTags(PublicProfileApi.java:363)
+	at knot//gg.vape.api.PublicProfileApi.lambda$getMostPopularTags$17(PublicProfileApi.java:378)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	... 6 more
+Caused by: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at knot//gg.vape.api.ApiHttpClient.withConnection(ApiHttpClient.java:71)
+	at knot//gg.vape.api.ApiHttpClient.get(ApiHttpClient.java:180)
+	at knot//gg.vape.api.ApiHttpClient.getApiResponse(ApiHttpClient.java:90)
+	at knot//gg.vape.api.PublicProfileApi.requestMostPopularTags(PublicProfileApi.java:360)
+	... 8 more
+Caused by: java.lang.RuntimeException: java.net.ConnectException: Connection refuse
+[2026-09-05 07:55:27.336] client error report: DEBUG 
+Exception java.util.concurrent.CompletionException java.util.concurrent.CompletionException: java.lang.RuntimeException: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.lang.RuntimeException: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at knot//gg.vape.api.PublicProfileApi.requestMostPopularTags(PublicProfileApi.java:363)
+	at knot//gg.vape.api.PublicProfileApi.lambda$getMostPopularTags$17(PublicProfileApi.java:378)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	... 6 more
+Caused by: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at knot//gg.vape.api.ApiHttpClient.withConnection(ApiHttpClient.java:71)
+	at knot//gg.vape.api.ApiHttpClient.get(ApiHttpClient.java:180)
+	at knot//gg.vape.api.ApiHttpClient.getApiResponse(ApiHttpClient.java:90)
+	at knot//gg.vape.api.PublicProfileApi.requestMostPopularTags(PublicProfileApi.java:360)
+	... 8 more
+Caused by: java.lang.RuntimeException: java.net.ConnectException: Connection refuse
+[2026-09-05 07:55:27.802] trs step 23: WindowsDisplay is not loaded; trying LWJGL3 window
+[2026-09-05 07:55:27.804] subclassed LWJGL3 window for input notifications
+[2026-09-05 07:55:30.778] client error report: DEBUG Failed to find 1 item(s):
+[2026-09-05 07:55:32.594] client error report: DEBUG ModernHitColor: hooked net.minecraft.class_922.method_62484(net.minecraft.class_10042)
+[2026-09-05 07:55:34.546] client error report: DEBUG SamplerFix: GL33 sampler support enabled via hook
+[2026-09-05 07:55:34.632] client error report: OK initializeManagers
+[2026-09-05 07:55:34.632] NativeBridge.start completed; injection is active
+[2026-09-05 07:55:38.728] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 08:22:56.564] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 08:23:06.528] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 08:24:58.655] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 08:25:30.644] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 08:29:53.842] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 08:30:01.810] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 08:30:33.878] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 08:30:49.856] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 08:33:09.957] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 08:34:09.072] client error report: DEBUG 
+Exception java.util.ConcurrentModificationException java.util.ConcurrentModificationException
+	at java.base/java.util.ArrayList$Itr.checkForComodification(ArrayList.java:1095)
+	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:1049)
+	at knot//net.minecraft.class_5572.method_31765(class_5572.java:33)
+	at knot//net.minecraft.class_5573.method_39465(class_5573.java:122)
+	at knot//net.minecraft.class_5573.consumeSection(class_5573.java:592)
+	at knot//net.minecraft.class_5573.forEachInColumn(class_5573.java:573)
+	at knot//net.minecraft.class_5573.handler$cjo000$lithium$forEachInBox(class_5573.java:562)
+	at knot//net.minecraft.class_5573.method_31777(class_5573.java:55)
+	at knot//net.minecraft.class_5573.method_31783(class_5573.java:122)
+	at knot//net.minecraft.class_5578.method_31807(class_5578.java:41)
+	at knot//net.minecraft.class_1937.method_8333(class_1937.java:660)
+	at aaa_121.invoke(Unknown Source)
+	at knot//gg.vape.mapping.MappingMethod.invokeObject(MappingMethod.java:362)
+	at knot//gg.vape.mapping.mappings.MWorld.T(MWorld.java:725)
+	at knot//gg.vape.wrapper.impl.World.F(World.java:277)
+	at knot//gg.vape.utils.MouseOverRayTraceUpdater.o(MouseOverRayTraceUpdater.java:181)
+	at knot//gg.vape.utils.RayTraceUtil.m(RayTraceUtil.java:289)
+	at knot//gg.vape.utils.RayTraceUtil.y(RayTraceUtil.java:122)
+	at knot//gg.vape.utils.RayTraceUtil.o(RayTraceUtil.java:207)
+	at knot//gg.vape.module.combat.AimAssist.canAim(AimAssist.java:244)
+	at knot//gg.vape.module.combat.aimassist.AimAssistTargetingSubModule.runTargetLoop(AimAssistTargetingSubModule.java:512)
+	at knot//gg.vape.module.combat.aimassist.AimAssistTargetingSubModule.runWorkerTick(AimAssistTargetingSubModule.java:77)
+	at knot//gg.vape.module.combat.aimassist.AimAssistWorkerThread.run(AimAssistWorkerThread.java:15)
+
+[2026-09-05 10:51:26.017] materialized embedded product JAR: C:\Users\Felix\AppData\Local\Temp\Vape421Recovery\vape421-product-22020.jar (23959243 bytes)
+[2026-09-05 10:51:26.021] appended product JAR to Fabric Knot ClassLoader
+[2026-09-05 10:51:26.022] registered NativeBridge methods (9 sample + gat + cpy + 5 stub)
+[2026-09-05 10:51:26.023] NativeBridge linked from C:\Users\Felix\AppData\Local\Temp\Vape421Recovery\vape421-product-22020.jar
+[2026-09-05 10:51:26.034] client error report: LOAD loadMappings
+[2026-09-05 10:51:27.067] client error report: OK loadMappings
+[2026-09-05 10:51:27.069] client error report: LOAD initAccountInfo
+[2026-09-05 10:51:27.076] client error report: Failed to initialize account details2: 
+Exception java.util.concurrent.CompletionException java.util.concurrent.CompletionException: java.lang.RuntimeException: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.lang.RuntimeException: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at knot//gg.vape.api.ApiServices.requestAccountInfo(ApiServices.java:61)
+	at knot//gg.vape.api.ApiServices.lambda$getAccountInfo$0(ApiServices.java:27)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	... 6 more
+Caused by: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at knot//gg.vape.api.ApiHttpClient.withConnection(ApiHttpClient.java:71)
+	at knot//gg.vape.api.ApiHttpClient.get(ApiHttpClient.java:180)
+	at knot//gg.vape.api.ApiHttpClient.getApiResponse(ApiHttpClient.java:90)
+	at knot//gg.vape.api.ApiServices.requestAccountInfo(ApiServices.java:57)
+	... 8 more
+Caused by: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+[2026-09-05 10:51:27.076] client error report: WARN initAccountInfo; continuing without account information
+[2026-09-05 10:51:27.077] client error report: LOAD initializeManagers
+[2026-09-05 10:51:27.083] client error report: DEBUG 
+Exception java.util.concurrent.CompletionException java.util.concurrent.CompletionException: java.lang.RuntimeException: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.lang.RuntimeException: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at knot//gg.vape.api.PublicProfileApi.requestMostPopularTags(PublicProfileApi.java:363)
+	at knot//gg.vape.api.PublicProfileApi.lambda$getMostPopularTags$17(PublicProfileApi.java:378)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	... 6 more
+Caused by: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at knot//gg.vape.api.ApiHttpClient.withConnection(ApiHttpClient.java:71)
+	at knot//gg.vape.api.ApiHttpClient.get(ApiHttpClient.java:180)
+	at knot//gg.vape.api.ApiHttpClient.getApiResponse(ApiHttpClient.java:90)
+	at knot//gg.vape.api.PublicProfileApi.requestMostPopularTags(PublicProfileApi.java:360)
+	... 8 more
+Caused by: java.lang.RuntimeException: java.net.ConnectException: Connection refuse
+[2026-09-05 10:51:27.083] client error report: DEBUG 
+Exception java.util.concurrent.CompletionException java.util.concurrent.CompletionException: java.lang.RuntimeException: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.lang.RuntimeException: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at knot//gg.vape.api.PublicProfileApi.requestMostPopularTags(PublicProfileApi.java:363)
+	at knot//gg.vape.api.PublicProfileApi.lambda$getMostPopularTags$17(PublicProfileApi.java:378)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	... 6 more
+Caused by: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at knot//gg.vape.api.ApiHttpClient.withConnection(ApiHttpClient.java:71)
+	at knot//gg.vape.api.ApiHttpClient.get(ApiHttpClient.java:180)
+	at knot//gg.vape.api.ApiHttpClient.getApiResponse(ApiHttpClient.java:90)
+	at knot//gg.vape.api.PublicProfileApi.requestMostPopularTags(PublicProfileApi.java:360)
+	... 8 more
+Caused by: java.lang.RuntimeException: java.net.ConnectException: Connection refuse
+[2026-09-05 10:51:27.569] trs step 23: WindowsDisplay is not loaded; trying LWJGL3 window
+[2026-09-05 10:51:27.571] subclassed LWJGL3 window for input notifications
+[2026-09-05 10:51:30.644] client error report: DEBUG Failed to find 1 item(s):
+[2026-09-05 10:51:32.408] client error report: DEBUG ModernHitColor: hooked net.minecraft.class_922.method_62484(net.minecraft.class_10042)
+[2026-09-05 10:51:34.391] client error report: DEBUG SamplerFix: GL33 sampler support enabled via hook
+[2026-09-05 10:51:34.483] client error report: OK initializeManagers
+[2026-09-05 10:51:34.483] NativeBridge.start completed; injection is active
+[2026-09-05 10:51:38.553] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 11:03:18.066] client error report: DEBUG 
+Exception java.util.ConcurrentModificationException java.util.ConcurrentModificationException
+	at java.base/java.util.ArrayList$Itr.checkForComodification(ArrayList.java:1095)
+	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:1049)
+	at knot//net.minecraft.class_5572.method_31765(class_5572.java:33)
+	at knot//net.minecraft.class_5573.method_39465(class_5573.java:122)
+	at knot//net.minecraft.class_5573.consumeSection(class_5573.java:592)
+	at knot//net.minecraft.class_5573.forEachInColumn(class_5573.java:573)
+	at knot//net.minecraft.class_5573.handler$cjo000$lithium$forEachInBox(class_5573.java:555)
+	at knot//net.minecraft.class_5573.method_31777(class_5573.java:55)
+	at knot//net.minecraft.class_5573.method_31783(class_5573.java:122)
+	at knot//net.minecraft.class_5578.method_31807(class_5578.java:41)
+	at knot//net.minecraft.class_1937.method_8333(class_1937.java:660)
+	at aaa_121.invoke(Unknown Source)
+	at knot//gg.vape.mapping.MappingMethod.invokeObject(MappingMethod.java:362)
+	at knot//gg.vape.mapping.mappings.MWorld.T(MWorld.java:725)
+	at knot//gg.vape.wrapper.impl.World.F(World.java:277)
+	at knot//gg.vape.utils.MouseOverRayTraceUpdater.o(MouseOverRayTraceUpdater.java:181)
+	at knot//gg.vape.utils.RayTraceUtil.m(RayTraceUtil.java:289)
+	at knot//gg.vape.utils.RayTraceUtil.y(RayTraceUtil.java:122)
+	at knot//gg.vape.utils.RayTraceUtil.o(RayTraceUtil.java:207)
+	at knot//gg.vape.module.combat.AimAssist.canAim(AimAssist.java:244)
+	at knot//gg.vape.module.combat.aimassist.AimAssistTargetingSubModule.runTargetLoop(AimAssistTargetingSubModule.java:512)
+	at knot//gg.vape.module.combat.aimassist.AimAssistTargetingSubModule.runWorkerTick(AimAssistTargetingSubModule.java:77)
+	at knot//gg.vape.module.combat.aimassist.AimAssistWorkerThread.run(AimAssistWorkerThread.java:15)
+
+[2026-09-05 11:42:53.498] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 11:45:08.501] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 11:45:28.506] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 11:46:03.568] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 11:48:56.698] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 11:55:54.959] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 11:57:21.104] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 17:44:32.792] materialized embedded product JAR: C:\Users\Felix\AppData\Local\Temp\Vape421Recovery\vape421-product-4344.jar (23959243 bytes)
+[2026-09-05 17:44:32.802] appended product JAR to Fabric Knot ClassLoader
+[2026-09-05 17:44:32.805] registered NativeBridge methods (9 sample + gat + cpy + 5 stub)
+[2026-09-05 17:44:32.806] NativeBridge linked from C:\Users\Felix\AppData\Local\Temp\Vape421Recovery\vape421-product-4344.jar
+[2026-09-05 17:44:32.854] client error report: LOAD loadMappings
+[2026-09-05 17:44:34.855] client error report: OK loadMappings
+[2026-09-05 17:44:34.855] client error report: LOAD initAccountInfo
+[2026-09-05 17:44:34.877] client error report: Failed to initialize account details2: 
+Exception java.util.concurrent.CompletionException java.util.concurrent.CompletionException: java.lang.RuntimeException: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.lang.RuntimeException: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at knot//gg.vape.api.ApiServices.requestAccountInfo(ApiServices.java:61)
+	at knot//gg.vape.api.ApiServices.lambda$getAccountInfo$0(ApiServices.java:27)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	... 6 more
+Caused by: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at knot//gg.vape.api.ApiHttpClient.withConnection(ApiHttpClient.java:71)
+	at knot//gg.vape.api.ApiHttpClient.get(ApiHttpClient.java:180)
+	at knot//gg.vape.api.ApiHttpClient.getApiResponse(ApiHttpClient.java:90)
+	at knot//gg.vape.api.ApiServices.requestAccountInfo(ApiServices.java:57)
+	... 8 more
+Caused by: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+[2026-09-05 17:44:34.878] client error report: WARN initAccountInfo; continuing without account information
+[2026-09-05 17:44:34.878] client error report: LOAD initializeManagers
+[2026-09-05 17:44:34.904] client error report: DEBUG 
+Exception java.util.concurrent.CompletionException java.util.concurrent.CompletionException: java.lang.RuntimeException: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.lang.RuntimeException: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at knot//gg.vape.api.PublicProfileApi.requestMostPopularTags(PublicProfileApi.java:363)
+	at knot//gg.vape.api.PublicProfileApi.lambda$getMostPopularTags$17(PublicProfileApi.java:378)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	... 6 more
+Caused by: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at knot//gg.vape.api.ApiHttpClient.withConnection(ApiHttpClient.java:71)
+	at knot//gg.vape.api.ApiHttpClient.get(ApiHttpClient.java:180)
+	at knot//gg.vape.api.ApiHttpClient.getApiResponse(ApiHttpClient.java:90)
+	at knot//gg.vape.api.PublicProfileApi.requestMostPopularTags(PublicProfileApi.java:360)
+	... 8 more
+Caused by: java.lang.RuntimeException: java.net.ConnectException: Connection refuse
+[2026-09-05 17:44:34.905] client error report: DEBUG 
+Exception java.util.concurrent.CompletionException java.util.concurrent.CompletionException: java.lang.RuntimeException: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.lang.RuntimeException: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at knot//gg.vape.api.PublicProfileApi.requestMostPopularTags(PublicProfileApi.java:363)
+	at knot//gg.vape.api.PublicProfileApi.lambda$getMostPopularTags$17(PublicProfileApi.java:378)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	... 6 more
+Caused by: java.lang.Exception: java.lang.RuntimeException: java.net.ConnectException: Connection refused: getsockopt
+	at knot//gg.vape.api.ApiHttpClient.withConnection(ApiHttpClient.java:71)
+	at knot//gg.vape.api.ApiHttpClient.get(ApiHttpClient.java:180)
+	at knot//gg.vape.api.ApiHttpClient.getApiResponse(ApiHttpClient.java:90)
+	at knot//gg.vape.api.PublicProfileApi.requestMostPopularTags(PublicProfileApi.java:360)
+	... 8 more
+Caused by: java.lang.RuntimeException: java.net.ConnectException: Connection refuse
+[2026-09-05 17:44:36.100] trs step 23: WindowsDisplay is not loaded; trying LWJGL3 window
+[2026-09-05 17:44:36.110] subclassed LWJGL3 window for input notifications
+[2026-09-05 17:44:38.796] client error report: DEBUG Failed to find 1 item(s):
+[2026-09-05 17:44:40.410] client error report: DEBUG ModernHitColor: hooked net.minecraft.class_922.method_62484(net.minecraft.class_10042)
+[2026-09-05 17:44:41.937] client error report: DEBUG SamplerFix: GL33 sampler support enabled via hook
+[2026-09-05 17:44:42.221] client error report: OK initializeManagers
+[2026-09-05 17:44:42.222] NativeBridge.start completed; injection is active
+[2026-09-05 17:44:46.288] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 17:47:42.353] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 17:47:47.382] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 17:49:37.484] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 18:00:53.842] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 18:02:43.911] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 18:02:51.848] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 18:03:06.918] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 18:05:33.331] client error report: DEBUG 
+Exception java.util.ConcurrentModificationException java.util.ConcurrentModificationException
+	at java.base/java.util.ArrayList$Itr.checkForComodification(ArrayList.java:1095)
+	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:1049)
+	at knot//net.minecraft.class_5572.method_31765(class_5572.java:33)
+	at knot//net.minecraft.class_5573.method_39465(class_5573.java:122)
+	at knot//net.minecraft.class_5573.consumeSection(class_5573.java:592)
+	at knot//net.minecraft.class_5573.forEachInColumn(class_5573.java:573)
+	at knot//net.minecraft.class_5573.handler$cjo000$lithium$forEachInBox(class_5573.java:555)
+	at knot//net.minecraft.class_5573.method_31777(class_5573.java:55)
+	at knot//net.minecraft.class_5573.method_31783(class_5573.java:122)
+	at knot//net.minecraft.class_5578.method_31807(class_5578.java:41)
+	at knot//net.minecraft.class_1937.method_8333(class_1937.java:660)
+	at aaa_121.invoke(Unknown Source)
+	at knot//gg.vape.mapping.MappingMethod.invokeObject(MappingMethod.java:362)
+	at knot//gg.vape.mapping.mappings.MWorld.T(MWorld.java:725)
+	at knot//gg.vape.wrapper.impl.World.F(World.java:277)
+	at knot//gg.vape.utils.MouseOverRayTraceUpdater.o(MouseOverRayTraceUpdater.java:181)
+	at knot//gg.vape.utils.RayTraceUtil.m(RayTraceUtil.java:289)
+	at knot//gg.vape.utils.RayTraceUtil.y(RayTraceUtil.java:122)
+	at knot//gg.vape.utils.RayTraceUtil.o(RayTraceUtil.java:207)
+	at knot//gg.vape.module.combat.AimAssist.canAim(AimAssist.java:244)
+	at knot//gg.vape.module.combat.aimassist.AimAssistTargetingSubModule.runTargetLoop(AimAssistTargetingSubModule.java:512)
+	at knot//gg.vape.module.combat.aimassist.AimAssistTargetingSubModule.runWorkerTick(AimAssistTargetingSubModule.java:77)
+	at knot//gg.vape.module.combat.aimassist.AimAssistWorkerThread.run(AimAssistWorkerThread.java:15)
+
+[2026-09-05 18:05:40.982] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 18:25:54.050] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 18:25:57.976] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 18:26:12.977] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 18:30:08.116] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 18:30:16.188] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 18:32:35.303] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 18:38:17.984] client error report: DEBUG 
+Exception java.util.ConcurrentModificationException java.util.ConcurrentModificationException
+	at java.base/java.util.ArrayList$Itr.checkForComodification(ArrayList.java:1095)
+	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:1049)
+	at knot//net.minecraft.class_5572.method_31765(class_5572.java:33)
+	at knot//net.minecraft.class_5573.method_39465(class_5573.java:122)
+	at knot//net.minecraft.class_5573.consumeSection(class_5573.java:592)
+	at knot//net.minecraft.class_5573.forEachInColumn(class_5573.java:573)
+	at knot//net.minecraft.class_5573.handler$cjo000$lithium$forEachInBox(class_5573.java:562)
+	at knot//net.minecraft.class_5573.method_31777(class_5573.java:55)
+	at knot//net.minecraft.class_5573.method_31783(class_5573.java:122)
+	at knot//net.minecraft.class_5578.method_31807(class_5578.java:41)
+	at knot//net.minecraft.class_1937.method_8333(class_1937.java:660)
+	at aaa_121.invoke(Unknown Source)
+	at knot//gg.vape.mapping.MappingMethod.invokeObject(MappingMethod.java:362)
+	at knot//gg.vape.mapping.mappings.MWorld.T(MWorld.java:725)
+	at knot//gg.vape.wrapper.impl.World.F(World.java:277)
+	at knot//gg.vape.utils.MouseOverRayTraceUpdater.o(MouseOverRayTraceUpdater.java:181)
+	at knot//gg.vape.utils.RayTraceUtil.m(RayTraceUtil.java:289)
+	at knot//gg.vape.utils.RayTraceUtil.y(RayTraceUtil.java:122)
+	at knot//gg.vape.utils.RayTraceUtil.o(RayTraceUtil.java:207)
+	at knot//gg.vape.module.combat.AimAssist.canAim(AimAssist.java:244)
+	at knot//gg.vape.module.combat.aimassist.AimAssistTargetingSubModule.runTargetLoop(AimAssistTargetingSubModule.java:512)
+	at knot//gg.vape.module.combat.aimassist.AimAssistTargetingSubModule.runWorkerTick(AimAssistTargetingSubModule.java:77)
+	at knot//gg.vape.module.combat.aimassist.AimAssistWorkerThread.run(AimAssistWorkerThread.java:15)
+
+[2026-09-05 18:40:23.703] client error report: DEBUG Modern PVP has no online uuid
+[2026-09-05 18:40:37.755] client error report: DEBUG Modern PVP has no online uuid
